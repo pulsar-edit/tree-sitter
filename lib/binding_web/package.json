@@ -28,6 +28,7 @@
   "homepage": "https://github.com/tree-sitter/tree-sitter/tree/master/lib/binding_web",
   "devDependencies": {
     "chai": "^4.2.0",
+    "js-beautify": "^1.14.7",
     "mocha": "^6.1.4",
     "terser": "^3.17.0"
   }

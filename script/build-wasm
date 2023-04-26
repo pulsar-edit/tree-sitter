@@ -31,7 +31,8 @@ set -e
 
 web_dir=lib/binding_web
 emscripten_flags="-O3"
-minify_js=1
+# NOTE: Changed by Pulsar to emit unminified code.
+minify_js=0
 force_docker=0
 emscripen_version=$(cat "$(dirname "$0")"/../cli/emscripten-version)
 
@@ -119,7 +120,9 @@ if [[ "$minify_js" == "1" ]]; then
     -- target/scratch/tree-sitter.js \
     > $web_dir/tree-sitter.js
 else
-  cp target/scratch/tree-sitter.js $web_dir/tree-sitter.js
+  # NOTE: Changed by Pulsar to emit code that is easier to debug locally.
+  ${web_dir}/node_modules/.bin/js-beautify target/scratch/tree-sitter.js > $web_dir/tree-sitter.js
+  # cp target/scratch/tree-sitter.js $web_dir/tree-sitter.js
 fi
 
 mv target/scratch/tree-sitter.wasm $web_dir/tree-sitter.wasm
