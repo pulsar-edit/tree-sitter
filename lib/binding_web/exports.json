@@ -20,6 +20,7 @@
   "___cxa_atexit",
   "_abort",
   "_isalpha",
+  "_isalnum",
   "_isspace",
   "_iswalnum",
   "_iswalpha",
