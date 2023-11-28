@@ -17,6 +17,8 @@
   "__ZdlPv",
   "__Znwm",
   "_abort",
+  "_isalpha",
+  "_isalnum",
   "_iswalnum",
   "_iswalpha",
   "_iswdigit",
