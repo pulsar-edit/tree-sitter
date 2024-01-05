@@ -24,6 +24,7 @@
   "_isspace",
   "_iswalnum",
   "_iswalpha",
+  "_isxdigit",
   "_iswblank",
   "_iswdigit",
   "_iswxdigit",
