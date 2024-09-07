@@ -24,5 +24,4 @@
 "towupper",
 "isalnum",
 "isxdigit",
-"iswxdigit",
 "strncmp",
