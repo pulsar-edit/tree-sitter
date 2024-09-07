@@ -22,3 +22,7 @@
 "strncpy",
 "towlower",
 "towupper",
+"isalnum",
+"isxdigit",
+"iswxdigit",
+"strncmp",
